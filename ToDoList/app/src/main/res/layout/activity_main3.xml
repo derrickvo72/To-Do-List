@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLogin"
+            android:text="Edit Note"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:text="Id"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvLogin"
+            android:id="@+id/txtN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_below="@+id/txtN"
+            android:id="@+id/tvId"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvId"
+            android:id="@+id/txtU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtU" />
+
+        <TextView
+            android:text="Description"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/edtName"
+            android:id="@+id/txtP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_below="@+id/txtP"
+            android:id="@+id/edtDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_below="@+id/edtDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_marginTop="10dp"
+                android:text="Save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/goback"
+                android:backgroundTint="@color/teal_200"
+                android:text="Back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
