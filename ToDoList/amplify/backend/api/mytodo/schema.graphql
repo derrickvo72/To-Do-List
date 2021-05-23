@@ -29,7 +29,7 @@ input TimestampConfiguration {
   updatedAt: String
 }
 
-type Todo @model {
+type TodoList @model {
   id: ID!
   name: String!
   description: String
